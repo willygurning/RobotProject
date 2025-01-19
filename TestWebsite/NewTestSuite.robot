@@ -54,3 +54,7 @@ TestCase2
     Page Should Contain    \    Appointment Confirmation
     Sleep    5s
     Close All Browsers
+
+TestCase3
+    [Setup]    Open Web
+    Login
