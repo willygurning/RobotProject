@@ -35,7 +35,7 @@ TestCase1
     Input Text    id=txt_comment    Ini merupakan teks
     Click Button    id=btn-book-appointment
     Page Should Contain    \    Appointment Confirmation
-    Sleep    5s
+    Sleep    3s
 
 TestCase2
     [Tags]    test2
@@ -58,3 +58,10 @@ TestCase2
 TestCase3
     [Setup]    Open Web
     Login
+
+Testcase4
+    Open Browser    ${url}    chrome
+    Click Element    xpath=//*[@id="btn-make-appointment"]
+    Input Text    id=txt-username    ${username}
+    Input Password    id=txt-password    ${password}
+    Click Button    id=btn-login
